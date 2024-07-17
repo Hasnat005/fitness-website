@@ -191,6 +191,8 @@ nav li {
     width: 40px;
     border-radius: 50%;
     background: rgb(230, 83, 60);
+    font-size: 2rem;
+    text-align: center;
 }
 .cart {
     position: relative;
@@ -255,6 +257,9 @@ nav li {
         width: 200%;
         gap: 10px;
     }
+    .secret-btn {
+        font-family: inter;
+    }
     .secret-btn .btn1, .btn2 {
         background: rgb(230, 83, 60);
         color: rgb(255, 255, 255);
@@ -273,23 +278,46 @@ nav li {
         background-image: none;
         color: white;
     }
-    .right-part .cart {
-        position: relative;
-        top: -540px;
-        left: 190px;
-        width: 100%;
-    }
     .cart h1, .cart1 h1{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     .cart p, .cart1 p{
-        font-size: .9rem;
+        font-size: .625rem;
     }
-    .right-part .cart1 {
+    .right-part .img-div {
+        /* position: absolute; */
+    }
+    .right-part .img-div .cart {
         position: relative;
-        top: -430px;
-        left: 0px;
-        width: 100%;
+        top: 40px;
+        left: 200px;
+        width: 30%;
+        padding: 5px;
     }
-
+    .right-part .img-div .cart1 {
+        /* position: relative; */
+        position: relative;
+        top: 230px;
+        left: 0px;
+        width: 40%;
+        padding: 5px;
+    }
+    /* .right-part > div {
+        width: 300px;
+        height: auto;
+        border: 1px solid red;
+    }
+    .right-part .div-img {
+        width: 300px;
+        margin: 0 auto;
+    } */
+    .right-part .img-div {
+        width: 200%;
+        height: 550px;
+        background-image: url("../images/Images2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: 1px solid red; */
+        
+    }
 }
