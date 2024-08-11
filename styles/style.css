@@ -764,105 +764,111 @@ select {
 
 /* bmi-calculator-section ends here */
 
+/* nutrition-section starts here */
 
-.container-for-nutrition {
+.nutrition-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2c2c2c 30%, #3a3a3a 100%);
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#nutrition {
-    background-color: black;
-    padding : 50px 0px;
+    margin: 40px auto;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInSection 1.5s ease-in-out;
 }
 
-#nutrition h2 {
-    color: rgb(255, 255, 255);
+.nutrition-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2), transparent);
+    z-index: 0;
+    transform: rotate(25deg);
+}
+
+.nutrition-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.nutrition-section h2 {
     font-family: Inter;
     font-size: 3rem;
     font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
-    /* width: 47%;
-    margin: 0 auto; */
-    /* text-align: center; */
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-#nutrition p {
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    text-align: left;
-    /* width: 47%;
-    margin: 0 auto; */
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.nutrition-cards {
-    /* display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.card-for-nutrition {
-    background-color: #000000;
-    border: 1px solid #f9f6f6;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    color: #fff;
     margin-bottom: 20px;
-    height: 300px;
-    padding: 20px;
-    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideInFromLeft 1.2s ease-out;
 }
 
-.card-for-nutrition img {
-    max-width: 100%;
-    border-radius: 8px;
+.nutrition-section .intro {
+    font-size: 0.875rem;
+    color: #aaa;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInText 1.5s ease-in-out;
 }
 
-.card-for-nutrition h3 {
-    color: rgb(255, 255, 255);
+.nutrition-section .nutrition-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nutrition-section .card {
+    background: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInCard 1.8s ease-in-out;
+}
+
+.nutrition-section .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffab40;
+    animation: slideInFromBottom 1.5s ease-out;
+}
+
+.nutrition-section .card h3 {
     font-family: Inter;
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
-    /* width: 47%;
-    margin: 0 auto; */
-    /* text-align: center; */
-    margin: 0 auto;
-    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 20px 0 10px;
+    animation: fadeInText 2s ease-in-out;
 }
 
-.card-for-nutrition p {
+.nutrition-section .card p {
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
-    text-align: left;
-    /* width: 47%;
-    margin: 0 auto; */
-    margin: 0 auto;
     text-align: center;
+    padding: 0 20px 20px;
+    animation: fadeInText 2.2s ease-in-out;
 }
+
+.nutrition-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* nutrition-section ends here */
+
 
 /* @media (max-width: 768px) {
     .card {
@@ -1065,6 +1071,22 @@ select {
     .bmi-lower-section h1 {
         font-size: 1.25rem;
     }   
+
+    .nutrition-section {
+        border-radius: 0px;
+    }
+    .nutrition-section .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .nutrition-section h2 {
+        font-size: 2.4em;
+    }
+
+    .nutrition-section .intro {
+        font-size: 1em;
+    }
 
 }
 
