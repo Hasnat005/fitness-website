@@ -712,6 +712,7 @@ footer .last {
     line-height: 22px;
     letter-spacing: 0px;
     text-align: left;
+    border-right: 10px solid transparent;
 }
 .bmi-right-part .form-container .input-row input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -751,13 +752,14 @@ footer .last {
     margin-top: 34px;
 }
 select {
-    appearance: none; 
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTggMTFsLTYtNmgxMmwtNiA2eiIvPjwvc3ZnPg==');
+    /* appearance: none;  */
+    /* -webkit-appearance: none;  */
+    /* -moz-appearance: none;  */
+    /* background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTggMTFsLTYtNmgxMmwtNiA2eiIvPjwvc3ZnPg=='); */
     /* background-image: url('../images/exercise1.jpg');    */
-    background-repeat: no-repeat;
-    background-position: right 10px center;
+    /* background-repeat: no-repeat; */
+    /* background-position: right 10px center; */
+    /* padding-right: 20px; */
 }
 
 /* bmi-calculator-section ends here */
