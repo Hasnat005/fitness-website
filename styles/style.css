@@ -108,9 +108,6 @@ nav li {
 
 /* banner starts here */
 
-.banner {
-    /* background-color: black; */
-}
 .banner-content {
     width: 100%;
     margin: 0 auto;
@@ -607,6 +604,7 @@ footer .last {
 .bmi-upper-section {
     width: 100%;
     background-color: black;
+    margin-top: 100px;
 }
 .bmi-upper-section h1 {
     color: rgb(255, 255, 255);
@@ -755,16 +753,7 @@ footer .last {
     border: none;
     margin-top: 34px;
 }
-select {
-    /* appearance: none;  */
-    /* -webkit-appearance: none;  */
-    /* -moz-appearance: none;  */
-    /* background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTggMTFsLTYtNmgxMmwtNiA2eiIvPjwvc3ZnPg=='); */
-    /* background-image: url('../images/exercise1.jpg');    */
-    /* background-repeat: no-repeat; */
-    /* background-position: right 10px center; */
-    /* padding-right: 20px; */
-}
+
 
 /* bmi-calculator-section ends here */
 
@@ -979,7 +968,9 @@ select {
         width: 65%;
     }
 
-
+    .extra-mile-section {
+        padding: 100px 0px 0px 0px;
+    }
     .extra-mile-container {
         width: 70%;
         grid-template-columns: 1fr;
@@ -1038,7 +1029,9 @@ select {
     .upper-section .part2 {
         padding-left: 0px;
     }
-
+    .bmi-upper-section {
+        margin-top: 0px;
+    }
     .bmi-upper-section h1 {
         font-size: 2rem;
         width: 90%;   
